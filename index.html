@@ -3,70 +3,233 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pet Feliz - Petshop</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Recurso de acessibilidade -->
+    <a href="#conteudo-principal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Cabeçalho -->
     <header>
         <h1>🐾 Pet Feliz</h1>
         <p>Cuidados e carinho para o seu melhor amigo!</p>
 
+        <!-- Menu de navegação -->
         <nav>
             <a href="index.html">Início</a>
             <a href="produtos.html">Produtos</a>
             <a href="servicos.html">Serviços</a>
+            <a href="cadastro.html">Cadastro e Agendamento</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <main>
+    <!-- Conteúdo principal -->
+    <main id="conteudo-principal">
 
-        <main>
+        <!-- Carrossel de destaques -->
+        <div id="carouselPetFeliz"
+            class="carousel slide mb-4"
+            data-bs-ride="carousel">
 
-    <h2>Bem-vindo ao Pet Feliz!</h2>
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
 
-    <p>
-        No Pet Feliz você encontra tudo o que precisa para cuidar
-        do seu melhor amigo.
-    </p>
+                <button
+                    type="button"
+                    data-bs-target="#carouselPetFeliz"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
 
-    <h3>O que você encontra aqui?</h3>
+                <button
+                    type="button"
+                    data-bs-target="#carouselPetFeliz"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
 
-    <ul>
-        <li>Produtos para alimentação</li>
-        <li>Brinquedos para cães e gatos</li>
-        <li>Acessórios para pets</li>
-        <li>Serviços de banho e tosa</li>
-        <li>Atendimento veterinário</li>
-    </ul>
+                <button
+                    type="button"
+                    data-bs-target="#carouselPetFeliz"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
 
-    <h3>Conheça nossos produtos</h3>
+            </div>
 
-    <p>
-        Temos produtos selecionados para proporcionar conforto,
-        diversão e qualidade de vida para o seu pet.
-    </p>
+            <!-- Slides -->
+            <div class="carousel-inner">
 
-    <a href="produtos.html">Ver produtos</a>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
 
-    <h3>Conheça nossos serviços</h3>
+                    <img
+                        src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=80"
+                        class="d-block w-100"
+                        alt="Cachorro da raça Golden Retriever representando os cuidados oferecidos pelo Pet Feliz">
 
-    <p>
-        Oferecemos serviços de banho, tosa, atendimento veterinário
-        e outros cuidados para o seu animal.
-    </p>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Bem-vindo ao Pet Feliz!</h2>
+                        <p>Carinho e cuidado para o seu melhor amigo.</p>
+                    </div>
 
-    <a href="servicos.html">Ver serviços</a>
+                </div>
 
-</main>
-       
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=1200&q=80"
+                        class="d-block w-100"
+                        alt="Gato representando os produtos disponíveis no Pet Feliz">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Produtos para seu pet</h2>
+                        <p>Alimentação, brinquedos e acessórios.</p>
+                    </div>
+
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=80"
+                        class="d-block w-100"
+                        alt="Cachorro sendo cuidado representando os serviços de banho e tosa">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Banho e Tosa</h2>
+                        <p>Agende um horário para cuidar do seu pet.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Botão anterior -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselPetFeliz"
+                data-bs-slide="prev">
+
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true">
+                </span>
+
+                <span class="visually-hidden">
+                    Anterior
+                </span>
+
+            </button>
+
+            <!-- Botão próximo -->
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselPetFeliz"
+                data-bs-slide="next">
+
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true">
+                </span>
+
+                <span class="visually-hidden">
+                    Próximo
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- Apresentação -->
+        <section>
+
+            <h2>Bem-vindo ao Pet Feliz!</h2>
+
+            <p>
+                No Pet Feliz você encontra tudo o que precisa
+                para cuidar do seu melhor amigo.
+            </p>
+
+            <h3>O que você encontra aqui?</h3>
+
+            <ul>
+                <li>Produtos para alimentação</li>
+                <li>Brinquedos para cães e gatos</li>
+                <li>Acessórios para pets</li>
+                <li>Serviços de banho e tosa</li>
+                <li>Atendimento veterinário</li>
+            </ul>
+
+        </section>
+
+        <!-- Produtos -->
+        <section>
+
+            <h3>Conheça nossos produtos</h3>
+
+            <p>
+                Temos produtos selecionados para proporcionar
+                conforto, diversão e qualidade de vida
+                para o seu pet.
+            </p>
+
+            <a href="produtos.html">
+                Ver produtos
+            </a>
+
+        </section>
+
+        <!-- Serviços -->
+        <section>
+
+            <h3>Conheça nossos serviços</h3>
+
+            <p>
+                Oferecemos serviços de banho, tosa,
+                atendimento veterinário e outros cuidados
+                para o seu animal.
+            </p>
+
+            <a href="servicos.html">
+                Ver serviços
+            </a>
+
+        </section>
+
     </main>
 
+    <!-- Rodapé -->
     <footer>
         <p>Pet Feliz - Todos os direitos reservados.</p>
         <p>Contato: contato@petfeliz.com.br</p>
     </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 

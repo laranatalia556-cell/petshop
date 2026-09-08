@@ -1,0 +1,83 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fdf6f0;
+    color: #333333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6b4f3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Menu de navegação */
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+/* Links do menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 30px;
+}
+
+/* Títulos */
+h2 {
+    color: #6b4f3b;
+}
+
+h3 {
+    color: #8a6549;
+}
+
+/* Rodapé */
+footer {
+    background-color: #6b4f3b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Carrossel da página inicial */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Texto sobre as imagens do carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Imagens dos produtos */
+.produto-img {
+    height: 250px;
+    object-fit: cover;
+}

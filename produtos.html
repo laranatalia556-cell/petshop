@@ -3,89 +3,279 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pet Feliz - Produtos</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Recurso de acessibilidade -->
+    <a href="#conteudo-principal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Cabeçalho -->
     <header>
         <h1>🐾 Pet Feliz</h1>
         <p>Cuidados e carinho para o seu melhor amigo!</p>
 
+        <!-- Menu de navegação -->
         <nav>
             <a href="index.html">Início</a>
             <a href="produtos.html">Produtos</a>
             <a href="servicos.html">Serviços</a>
+            <a href="cadastro.html">Cadastro e Agendamento</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <main>
+    <!-- Conteúdo principal -->
+    <main id="conteudo-principal" class="container">
 
-        <h2>Produtos</h2>
+        <h2 class="mb-4">Produtos</h2>
 
-        <h3>Alimentação</h3>
+        <!-- Categoria Alimentação -->
+        <section class="mb-5">
 
-        <article>
-            <h4>Ração Premium para Cachorros</h4>
-            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=400&q=80" 
-                 alt="Ração para cachorro">
-            <p>Ração premium para cães adultos, com nutrientes essenciais para uma alimentação equilibrada.</p>
-            <p>Valor: R$ 89,90</p>
-        </article>
+            <h3 class="mb-3">Alimentação</h3>
 
-        <article>
-            <h4>Ração para Gatos</h4>
-           <img src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=400&q=80"
-                alt="Ração para gato">
-            <p>Ração completa para gatos adultos, desenvolvida para uma alimentação saudável.</p>
-            <p>Valor: R$ 79,90</p>
-        </article>
+            <div class="row g-4">
 
+                <!-- Produto 1 -->
+                <div class="col-md-6">
 
-        <h3>Brinquedos</h3>
+                    <article class="card h-100 shadow-sm">
 
-        <article>
-            <h4>Bolinha para Pets</h4>
-            <img src="https://placehold.co/200x150?text=Bolinha+para+Pets"
-                 alt="Bolinha para pets">
-            <p>Brinquedo resistente para estimular a diversão e a atividade física do seu pet.</p>
-            <p>Valor: R$ 19,90</p>
-        </article>
+                        <img
+                            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Ração premium para cachorro">
 
-        <article>
-            <h4>Mordedor para Cachorros</h4>
-           <img src="https://placehold.co/200x150?text=Mordedor+para+Cachorro"
-                alt="Mordedor para cachorro">
-            <p>Mordedor desenvolvido para proporcionar diversão e ajudar na saúde bucal dos cães.</p>
-            <p>Valor: R$ 29,90</p>
-        </article>
+                        <div class="card-body">
 
+                            <h4 class="card-title">
+                                Ração Premium para Cachorros
+                            </h4>
 
-        <h3>Acessórios</h3>
+                            <p class="card-text">
+                                Ração premium para cães adultos,
+                                com nutrientes essenciais para uma
+                                alimentação equilibrada.
+                            </p>
 
-        <article>
-            <h4>Coleira para Cachorros</h4>
-            <img src="https://placehold.co/200x150?text=Coleira+para+Cachorro"
-                 alt="Coleira para cachorro">
-            <p>Coleira confortável e resistente para passeios seguros com seu pet.</p>
-            <p>Valor: R$ 39,90</p>
-        </article>
+                            <p class="fw-bold">
+                                Valor: R$ 89,90
+                            </p>
 
-        <article>
-            <h4>Cama para Pets</h4>
-            <img src="https://placehold.co/200x150?text=Cama+para+Pets"
-                 alt="Cama para pets">
-            <p>Cama confortável para garantir momentos de descanso e tranquilidade para seu pet.</p>
-            <p>Valor: R$ 119,90</p>
-        </article>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="col-md-6">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Gato próximo ao seu alimento">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Ração para Gatos
+                            </h4>
+
+                            <p class="card-text">
+                                Ração completa para gatos adultos,
+                                desenvolvida para uma alimentação saudável.
+                            </p>
+
+                            <p class="fw-bold">
+                                Valor: R$ 79,90
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Categoria Brinquedos -->
+        <section class="mb-5">
+
+            <h3 class="mb-3">Brinquedos</h3>
+
+            <div class="row g-4">
+
+                <!-- Produto 3 -->
+                <div class="col-md-6">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Cachorro brincando ao ar livre com brinquedo">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Bolinha para Pets
+                            </h4>
+
+                            <p class="card-text">
+                                Brinquedo resistente para estimular
+                                a diversão e a atividade física do seu pet.
+                            </p>
+
+                            <p class="fw-bold">
+                                Valor: R$ 19,90
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="col-md-6">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Cachorro com brinquedo para morder">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Mordedor para Cachorros
+                            </h4>
+
+                            <p class="card-text">
+                                Mordedor desenvolvido para proporcionar
+                                diversão e ajudar na saúde bucal dos cães.
+                            </p>
+
+                            <p class="fw-bold">
+                                Valor: R$ 29,90
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Categoria Acessórios -->
+        <section class="mb-5">
+
+            <h3 class="mb-3">Acessórios</h3>
+
+            <div class="row g-4">
+
+                <!-- Produto 5 -->
+                <div class="col-md-6">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Cachorro usando coleira">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Coleira para Cachorros
+                            </h4>
+
+                            <p class="card-text">
+                                Coleira confortável e resistente
+                                para passeios seguros com seu pet.
+                            </p>
+
+                            <p class="fw-bold">
+                                Valor: R$ 39,90
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="col-md-6">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top produto-img"
+                            alt="Cachorros descansando confortavelmente">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Cama para Pets
+                            </h4>
+
+                            <p class="card-text">
+                                Cama confortável para garantir
+                                momentos de descanso e tranquilidade
+                                para seu pet.
+                            </p>
+
+                            <p class="fw-bold">
+                                Valor: R$ 119,90
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
+    <!-- Rodapé -->
     <footer>
         <p>Pet Feliz - Todos os direitos reservados.</p>
         <p>Contato: contato@petfeliz.com.br</p>
     </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 
